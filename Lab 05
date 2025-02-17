@@ -1,0 +1,58 @@
+import java.util.Scanner;
+/*
+nextBoolean()	Reads a boolean value from the user
+nextByte()	Reads a byte value from the user
+nextDouble()	Reads a double value from the user
+nextFloat()	Reads a float value from the user
+nextInt()	Reads an int value from the user
+nextLine()	Reads a String value from the user
+nextShort()	Reads a short value from the user
+
+- Example -
+float num;
+num = scanner.nextFloat();
+or
+float num = scanner.nextFloat();
+Lab- User Input - Medical Form
+
+For this assignment you will practice getting user input in Java.
+
+Declare a Scanner object to be able to get information from the user.
+
+Assume you are hired by hospital Texas General, and they've tasked you to create a program to collect user information to save paper.
+
+Get and store the user's name. (Store as text)
+Get and store the user's age. (Store as a whole number)
+Get and store the user's weight. (Store it as a real number)
+Get and store if the user is a smoker. (Store it as either true or false)
+Output all of the information back to the user.
+*/
+
+public class Input {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Enter user name: ");
+            String name = scanner.nextLine();
+            
+            System.out.print("Enter user age: ");
+            int age = scanner.nextInt();
+            
+            System.out.print("Enter user weight: ");
+            float weight = scanner.nextFloat();
+
+            System.out.print("- User smoking status - Enter True/true or False/false: ");
+            boolean smoker= scanner.nextBoolean();
+
+        System.out.println();
+
+            System.out.println("- " + name + " - Medical Form - " );
+            System.out.println("User name: " + name);
+            System.out.println("User age: " + age);
+            System.out.println("User weight: " + weight);
+            System.out.println("User status: " + smoker);
+            
+            //scanner.close() this was not mentioned in README file
+            scanner.close();
+    }
+}
