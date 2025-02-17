@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class LetterGrade{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        String continueInput;
+do{
+        System.out.print("Enter grade: ");
+        double grade = scanner.nextDouble();
+        if(grade<0){
+            System.out.println("Oops you input a negative value");
+        }
+        else if(grade>=90){
+            System.out.println("Final grade: " + "A");
+        }
+        else if(grade>=80){
+            System.out.println("Final grade: " + "B");
+        }
+        else if(grade>=70){
+            System.out.println("Final grade: " + "C");
+        }
+        else if(grade>=60){
+            System.out.println("Final grade: " + "D");
+        }
+        else{
+            System.out.println("Final grade: " + "F");
+        }
+        System.out.println();
+        System.out.print("To enter more grades enter (yes/no): " );
+        continueInput= scanner.next();
+}
+
+    while (continueInput.equalsIgnoreCase("yes")); //Repeats loop based on users decision 
+        System.out.println("Thank you for using my program! Goodbye!");
+        scanner.close();
+
+    }
+}
