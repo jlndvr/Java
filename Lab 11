@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class PartyInventory {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter number of items: ");
+        int numberofitems = scanner.nextInt();
+        scanner.nextLine();
+        
+        //Declare 
+        String[] itemNames = new String[numberofitems];
+        int[] itemAmounts = new int[numberofitems];
+        
+        for (int i = 0; i < numberofitems; i++) {
+            System.out.print((i + 1) + ". Name & Amount: ");
+            String itemInput = scanner.nextLine();
+            String[] itemDetails = itemInput.split(" "); 
+            
+            itemNames[i] = itemDetails[0];  
+            itemAmounts[i] = Integer.parseInt(itemDetails[1]); 
+        }
+        
+        //Display
+        System.out.println("\nInventory:");
+        for (int i = 0; i < numberofitems; i++) {
+            System.out.println("Item: " + itemNames[i] + ", Amount: " + itemAmounts[i]);
+        }
+
+        scanner.close();
+    }
+}
