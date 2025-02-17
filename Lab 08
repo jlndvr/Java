@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Ranges{
+    public static void main(String[] args){
+        System.out.println("Welcome to my range calculator program! Bienvenidos a mi programa de calculadora de rangos!");
+        String continueInput;
+        Scanner scanner = new Scanner(System.in);
+do{
+        System.out.print("Enter a number: ");
+        double number=scanner.nextDouble();
+
+        //greater than or equal to -45, but less than 0
+        if(-45 <= number && number < 0){
+            System.out.println("Your number is in range BLUE.");
+        }
+
+        //greater than or equal to 0, but less than 45
+        else if(0 <= number && number < 45){
+            System.out.println("Your number is in range RED.");
+        }
+
+        //greater than or equal to -90, but less than -45 || greater than or equal to 45, but less than or equal to 90
+        else if((-90 <= number && number < -45) || (45 <= number && number <= 90)){
+            System.out.println("Your number is in range GREEN.");
+        }
+        else{
+            System.out.println("Number is out of range.");
+        }
+        System.out.print("To find more numbers in a color range, type yes/no: ");
+            continueInput = scanner.next();
+}
+        while(continueInput.equalsIgnoreCase("yes"));
+         System.out.print("Thank you for using my color range calculator!");
+         scanner.close();
+    }
+}
