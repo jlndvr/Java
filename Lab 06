@@ -1,0 +1,28 @@
+public class Comparisons{
+    public static void main(String[] args){
+// Practice comparing characters.
+System.out.println("Is b less than B ? " + ('b' < 'B') ); //'b' has a greater unicode value than 'B'
+
+// Practice comparing numbers.
+System.out.println("Is 25.001 greater than or equal to 25.0f ? " + (25.001f >= 25.0f) );
+
+// Practice comparing characters and numbers with mystery squiggly line
+System.out.println("Is A equal to 65 ? " + ('A' == 65) ); //'A' unicode value is 65
+
+// Practice comparing multiple numbers.
+int x = 5;
+System.out.println("Is x greater than -10 and is x less than 10 ? " + (x > -10 && x < 10) );
+
+// Practice comparing strings.
+String word = "Hello";
+System.out.println("Is word equal to 'hello' ? " + (word.equals("hello")) );
+
+//Practice comparing strings.
+word = "Aardvark"; 
+System.out.println("Is word greater than 'Zoo' ? " + (word.compareTo("Zoo")>0) );
+
+// Practice comparing a character from a string.
+word = "hello";
+System.out.println("Is the first letter of word equal to h ? " + (word.charAt(0)=='h') );
+    }
+}
