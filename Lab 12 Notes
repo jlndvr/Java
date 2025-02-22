@@ -1,0 +1,42 @@
+/*
+2d arrays: The 1st set of [ ] determine the number of rows, and 
+the 2nd set of [ ] determine the number of columns
+                  [rows][columns]
+*/
+
+//**Declaring**
+        int [][] nums_array;
+        //or
+        String [][] word_array;
+
+//**Allocating memory**
+//During (one line)
+String[][] text_array = new String[5][4]; // [5 rows][4 columns]
+//After (2 lines)
+float[][] nums_array;
+nums_array = new float[3][10]; // [3 rows][10 columns]
+
+//**Initializing**
+// During 
+String[][] car_array = {
+    {"Siena", "Camry", "Tundra"},      // [1st row][3 columns]
+    {"Mustang", "Bronco"},             // [2nd row][2 columns]
+    {"Tahoe", "Siverado", "Cavalier"}, // [3rd row][3 columns]
+};
+// After 
+String[][] color_array = new String[2][2]; // [2 rows][2 columns]
+// 1st row
+color_array[0][0] = "Blue";
+color_array[0][1] = "Navy";
+// 2nd row
+color_array[1][0] = "Red";
+color_array[1][1] = "Scarlet";
+
+/* **Visualize** 
+For the image below, assume you're working with following 2D array:
+int[][] x = new int[3][3];
+3 * 3    Column 0(1) Column 1(2) Column 2(3)
+Row 0(1)  x[0][0]     x[0][1]    x[0][2]
+Row 1(2)  x[1][0]     x[1][1]    x[1][2]
+Row 2(3)  x[2][0]     x[2][1]    x[2][2]
+*/
