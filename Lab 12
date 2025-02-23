@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class Reverse{
+    public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in);
+
+System.out.print("Enter rows: ");
+int rows=scanner.nextInt();
+
+System.out.print("Enter columns: ");
+int columns=scanner.nextInt();
+
+int [][] nums_array=new int[rows][columns];
+int count=1;
+for(int i=0;i<rows;i++){
+    for(int j=0;j<columns;j++){
+        nums_array[i][j]=count++;
+    }
+}
+
+System.out.println("Original:");
+printArray(nums_array);
+
+reverseRows(nums_array);
+
+System.out.println("Reversed:");
+printArray(nums_array);
+
+scanner.close();
+}
+
+//Print method
+public static void printArray(int[][] array) {
+    int maxDigits = String.valueOf(array.length * array[0].length).length();//Makes it pretty
+for (int i = 0; i < array.length; i++) {
+    for (int j = 0; j < array[i].length; j++) {
+        System.out.printf("%" + (maxDigits + 1) + "d |", array[i][j]);//Makes it pretty
+    }
+    System.out.println();
+}
+}
+
+//Reverse loop
+public static void reverseRows(int[][] array) {
+for (int i = 0; i < array.length; i++) {
+    int start = 0;
+    int end = array[i].length - 1;
+    while (start < end) {
+        int temp = array[i][start];
+        array[i][start] = array[i][end];
+        array[i][end] = temp;
+        start++;
+        end--;
+    }
+}
+}
+}
