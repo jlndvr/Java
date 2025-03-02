@@ -1,0 +1,44 @@
+public class SimpleFunctions {
+    public static void main(String[] args) {
+        // You can test your functions here.
+        System.out.println(greet());
+        System.out.println(sum(2,3));
+        System.out.println(even(9));
+        int[] ar = { 1, 2, 3 , 45, 90, 30};
+        System.out.println(max(ar));
+    }
+
+/* To create a function use this template:
+static returnType functionName
+*/
+
+/* Non-value returning methods have prefix void.
+Value-returning methods have the prefix of the values type: int,
+float, String, etc. and require the return keyword somewhere inside its { }
+*/
+
+// You can create your functions here.
+static String greet(){
+    return "Hello world";
+}
+
+static double sum(double x, double y){
+    return x + y;
+}
+
+static boolean even(int x){
+    return x % 2 == 0;
+}
+
+static int max(int[] x){
+if (x == null || x.length == 0) {
+    throw new IllegalArgumentException("-Array is empty-");
+}
+    int Lvalue = x[0];
+for (int value : x) {
+    Lvalue = Math.max(Lvalue, value);
+}
+    return Lvalue;
+}
+
+}
