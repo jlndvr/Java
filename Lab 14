@@ -1,0 +1,44 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaring elements (DON'T EDIT)
+        int primitive = 0;
+        int [] arr = {0, 0, 0};
+        Dog obj = new Dog();
+
+        // Call your functions here.
+        incrementVar(primitive); // copy
+        incrementArr(arr);        // reference                 Function calls
+        incrementObj(obj);     // reference   
+
+        // View output (DON'T EDIT)
+        System.out.println("Primitive Variable: " +  primitive);
+        System.out.println("Array: " + arr[0] + "," + arr[1] + "," + arr[2]);
+        System.out.println("Object: " + obj.age);
+    }
+
+    // Write your functions here.
+    static void incrementVar(int x) {
+        x += 1;
+        System.out.println("Incremented value: " + x);
+    }
+
+    static void incrementArr(int[] x) {
+        if (x == null || x.length == 0) {
+            throw new IllegalArgumentException("-Array is empty-"); // Checks if array is empty
+        }
+        for (int i = 0; i < x.length; i++) { // Goes through array values and incremnts each 
+            x[i] += 1; 
+        }
+        System.out.println("Incremented array : x = " + java.util.Arrays.toString(x)); 
+    }
+
+    static void incrementObj(Dog dog) {
+        dog.age += 1; // Increments age
+        System.out.println("Incremented dog age: " + dog.age);
+    }
+}
+
+// Use this class for creating your object(s). (DON'T EDIT)
+class Dog {
+    int age = 0;
+}
