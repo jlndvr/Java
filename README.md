@@ -4,4 +4,4 @@
 * [Setup](#setup)
 
 ## General info
-Consists of labs completed during the spring semester of 2025
+This repository includes the Java programming labs I worked on during the spring 2025 semester, demonstrating hands-on coding abilities and problem-solving skills.
