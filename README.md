@@ -1,8 +1,6 @@
 # JAVA Object Oriented Programming(OOP)
-
 ## General info
 This repository includes the Java programming labs I worked on during the spring 2025 semester, demonstrating hands-on coding abilities and problem-solving skills.
-
 ### Labs
 - [Lab 1](https://github.com/jlndvr/Java/blob/main/Lab%2001)
 - [Lab 2](https://github.com/jlndvr/Java/blob/main/Lab%2002)
@@ -21,6 +19,14 @@ This repository includes the Java programming labs I worked on during the spring
 - [Lab 13](https://github.com/jlndvr/Java/blob/main/Lab%2013)
 - [Lab 14](https://github.com/jlndvr/Java/blob/main/Lab%2014)
 - [Lab 15](https://github.com/jlndvr/Java/blob/main/Lab%2015)
-- [Lab 16]()
-- [Lab 17]()
-- [Lab 18]()
+### Lab 16
+- [Lab 16](https://github.com/jlndvr/Java/blob/main/Lab%2016%20Dealership.java)
+- [Lab 16](https://github.com/jlndvr/Java/blob/main/Lab%2016%20car.java)
+### Lab 17
+- [Lab 17](https://github.com/jlndvr/Java/blob/main/Lab%2017%20Car.java)
+- [Lab 17](https://github.com/jlndvr/Java/blob/main/Lab%2017%20Main.java)
+- [Lab 17](https://github.com/jlndvr/Java/blob/main/Lab%2017%20RV.java)
+- [Lab 17](https://github.com/jlndvr/Java/blob/main/Lab%2017%20Trailer.java)
+### Lab 18
+- [Lab 18](https://github.com/jlndvr/Java/blob/main/Lab%2018%20Main.java)
+- [Lab 18](https://github.com/jlndvr/Java/blob/main/Lab%2018%20Student.java)
