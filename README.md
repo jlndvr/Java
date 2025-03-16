@@ -15,7 +15,7 @@ This repository includes the Java programming labs I worked on during the spring
 - [Lab 9](https://github.com/jlndvr/Java/blob/main/Lab%2009)
 - [Lab 10](https://github.com/jlndvr/Java/blob/main/Lab%2010)
 - [Lab 11](https://github.com/jlndvr/Java/blob/main/Lab%2011)
-# Lab 12
+### Lab 12
 - [Lab 12 notes](https://github.com/jlndvr/Java/blob/main/Lab%2012%20Notes)
 - [Lab 12](https://github.com/jlndvr/Java/blob/main/Lab%2012)
 - [Lab 13](https://github.com/jlndvr/Java/blob/main/Lab%2013)
