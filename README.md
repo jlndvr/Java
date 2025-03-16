@@ -1,4 +1,4 @@
-## Table of contents
+## JAVA Object Oriented Programming(OOP)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
